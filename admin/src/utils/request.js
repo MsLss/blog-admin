@@ -3,7 +3,7 @@ import axios from 'axios'
 // 创建axios实例
 const request = axios.create({
     // 配置请求的的公共地址
-    baseURL:"",
+    baseURL:process.env.VUE_APP_BASE_API,
     // 配置请求的超时时间
     timeout:5*1000
     // 还可以配置更多的内容，请查看axios中文文档
